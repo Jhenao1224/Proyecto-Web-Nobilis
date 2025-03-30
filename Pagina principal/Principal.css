@@ -1,0 +1,269 @@
+/* Estilos generales para la página principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: url('Imagen.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: "Georgia", serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.scroll-down {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.propiedades {
+    background: #535252;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Georgia", serif;
+}
+
+.propiedades h2 {
+    font-size: 36px;
+}
+
+.propiedades-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.propiedad {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.propiedad img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.propiedad h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.propiedad p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.contenido-adicional {
+    background-color: #1c1c1c; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 90px 20px;
+    font-family: "Georgia", serif;
+}
+
+.contenido-adicional h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contenido-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.contenido-img {
+    width: 40%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.texto-extraido {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    max-height: 235px;
+    margin-top: 24px;
+}
+
+.texto-extraido p, .texto-extraido ul {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.texto-extraido ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.texto-extraido ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.texto-extraido ul li::before {
+    content: "★"; 
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+}
+
+.pagina-frase {
+    background-color: #e0e0e0; 
+    color: #333; 
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Georgia", serif; 
+}
+
+.pagina-frase h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.pagina-frase p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.frase-final {
+    margin-top: 200px; 
+    text-align: center;
+}
+
+.frase-final h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.frase-final p {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.registro {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Georgia", serif;
+}
+.registro-card {
+    background-color: #2a2a2a;
+    padding: 150px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    height: 80%;
+}
+.registro-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: "Georgia", serif;
+}
+.registro-btn:hover {
+    background-color: #ccc;
+}
+
+.registro-links {
+    margin-top: 145px;
+}
+.registro-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.registro-links a:hover {
+    text-decoration: underline;
+}
