@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobilis</title>
+    <link rel="stylesheet" href="Principal.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Nobilis</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Propiedades</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Mi perfil</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Bienvenido a Nobilis</h1>
+            <p>Encuentra las mejores propiedades de lujo</p>
+        </div>
+        <a href="#destacadas" class="scroll-down">▼</a>
+    </header>
+
+    <section id="destacadas" class="propiedades">
+        <h2>Propiedades destacadas</h2>
+        <p>Descubre nuestras propiedades más destacadas, diseñadas para ofrecerte comodidad, exclusividad y un estilo de vida único.</p>
+        <div class="propiedades-grid">
+            <div class="propiedad">
+                <img src="Mansion1.png" alt="Mansion 1">
+                <h3>Francesca Piovani</h3>
+                <p>Founder, CEO & Architect</p>
+            </div>
+            <div class="propiedad">
+                <img src="Mansion2.png" alt="Mansion 2">
+                <h3>Rhye Moore</h3>
+                <p>Engineering Manager</p>
+            </div>
+            <div class="propiedad">
+                <img src="Mansion3.png" alt="Mansion 3">
+                <h3>Helga Steiner</h3>
+                <p>Architect</p>
+            </div>
+            <div class="propiedad">
+                <img src="Mansion4.png" alt="Mansion 4">
+                <h3>Ivan Lawrence</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="contenido-adicional" class="contenido-adicional">
+        <h2>Apasionados por ayudarte a <br> encontrar el lugar de tus sueños.</h2>
+        <h4>Nuestro compromiso va más allá de la venta; nos enorgullece acompañar a <br> nuestros clientes en cada paso del proceso, asegurándonos de que <br> encuentren la residencia que se adapte perfectamente a sus necesidades, <br> deseos y estilo de vida</h4>
+        <br>
+        <div class="contenido-pagina">
+            <div class="texto-extraido">
+                <h2>Propiedades exclusivas</h2>
+                <ul>
+                    <li>Solo seleccionamos las propiedades más sofisticadas, ubicadas en las mejores zonas, con los estándares más altos de calidad.</li>
+                </ul>
+            </div>
+            <div class="texto-extraido">
+                <h2>Atención personalizada</h2>
+                <ul>
+                    <li>Nuestro equipo de expertos está siempre disponible para ofrecerte un servicio altamente especializado y adaptado a tus expectativas.</li>
+                </ul>
+            </div>
+            <div class="texto-extraido">
+                <h2>Compromiso con la excelencia</h2>
+                <ul>
+                    <li>No solo vendemos casas, sino que ayudamos a crear hogares donde el lujo y el confort se fusionan perfectamente.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagina-frase" class="pagina-frase">
+        <h2>Con Nosotros...</h2>
+        <p>Descubre la propiedad de tus sueños en un entorno donde el lujo, la exclusividad y el confort se combinan perfectamente. Cada una de nuestras casas está diseñada para ofrecerte no solo un hogar, sino un estilo de vida incomparable, donde la elegancia y la sofisticación se viven en cada rincón.</p>
+        <br>
+        <p>Déjate envolver por espacios únicos que reflejan lo mejor en calidad, diseño y comodidad.</p>
+        
+        <div class="frase-final">
+            <h3>Noblis</h3>
+            <p>Donde el lujo se convierte en hogar.</p>
+        </div>
+    </section>
+
+    <section id="registro" class="registro">
+        <div class="registro-card">
+            <h2>Regístrate en Nobilis</h2>
+            <p>Únete a la exclusividad de Nobilis.</p>
+            <br>
+            <button class="registro-btn">Regístrate</button>
+            <br><br>
+            <div class="registro-links">
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Términos y Condiciones</a> | 
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </section>   
+
+    <script>
+        document.querySelector('.scroll-down').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#destacadas').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
