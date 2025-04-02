@@ -32,5 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Registro exitoso. Bienvenido " + nombre + "!");
         document.getElementById("registro-form").reset(); // Limpiar el formulario
 
+        window.location.href = "Principal.html";
+
     });
 });   

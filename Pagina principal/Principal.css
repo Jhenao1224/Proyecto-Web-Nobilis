@@ -322,9 +322,9 @@ input:focus {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Georgia", serif;
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none; 
     text-align: center;
 }
 .inicio-btn:hover {

@@ -3,26 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Login</title>
     <link rel="stylesheet" href="Principal.css">
 </head>
 <body>
     <section id="login-box" class="registro">
         <div class="registro-card">
-            <h2>Registrate en Nobilis</h2>
-            <p>Completa el formulario para unirte.</p>
+            <h2>Inicia Sesión</h2>
             <br>
-            <form id="registro-form">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <br>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" required>
-                </div>
-                <br>
+            <form id="login-form">
                 <div>
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" required>
@@ -33,12 +22,18 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <br>
-                <button type="button" class="registro-btn" id="registrar-btn">Registrarse</button>
+                <button type="button" class="registro-btn" id="login-btn">Iniciar Sesión</button>
             </form>
             <br>
-            <a href="Principal.html" class="inicio-btn">Volver al incio</a>
+            <div>
+                <a href="registro.html" class="inicio-btn">Registrarse</a>
+            </div>
+            <br>
+            <div>
+                <a href="Principal.html" class="inicio-btn">Volver al incio</a>
+            </div>
         </div>
     </section>
-    <script src="registro.js"></script>
+    <script src="inicio-sesion.js"></script>    
 </body>
 </html>
